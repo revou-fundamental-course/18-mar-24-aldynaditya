@@ -1,0 +1,47 @@
+.header-container{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.nav-container {
+    border: 1px solid;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-image: url('../assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-content {
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+.main-content-container {
+    border: 1px solid;
+    display: flex;
+}
+
+.autoslide-container {
+    border: 1px solid;
+    height: 200px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.forminput-container {
+    border: 1px solid;
+    height: 200px;
+    width: 100%;
+    margin-left: 20px;
+}
