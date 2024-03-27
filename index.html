@@ -9,9 +9,9 @@
     <header class="header-container">
         <div class="logo-icon"></div>
         <div class="nav-container">
-            <button> Home</button>
-            <button> Our Package</button>
-            <button> Call Us</button>
+            <a href="#" class="nav-button nav-button-left">Home</a>
+            <a href="#" class="nav-button nav-button-middle">Our Package</a>
+            <a href="#" class="nav-button nav-button-right">Call Us</a>
         </div>
     </header>
     <hr />
@@ -19,7 +19,7 @@
     <main class="main-container">
         <header class="title-content">
             <h1>Your Travel Trusted Agent's</h1>
-            <h3>Your Hapiness is Ours</h3>
+            <h3><span class="notbold">Your Hapiness is Ours</span></h3>
         </header>
         <section class="main-content-container">
             <div class="autoslide-container">
@@ -27,20 +27,22 @@
             </div>
             <div class="forminput-container">
                 <header class="titleform">
-                    <h3>Contact Us</h3>
-                    <p> Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                    <h2>Contact Us</h2>
+                    <h4><span class="notbold">Sales akan menghubungi anda 1x24 jam setelah data kami terima</span></h4>
                 </header>
                 <section class="forminput">
                     <label for="">Your Name :</label><br>
-                    <input type="text"><br>
+                    <input type="text" id="name" name="name" class="form-design" placeholder="First and Last Name"><br><br>
                     <label for="">Email Address</label><br>
-                    <input type="text"><br>
+                    <input type="text" id="email" name="email" class="form-design" placeholder="example@gmail.com"><br><br>
                     <label for="">What are you interested?</label><br>
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                      </select>
+                    <select class="form-design" name="" id="">
+                        <option value="" disabled selected hidden >Select Option</option>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                    </select><br>
+                    <input type="submit" value="SEND" class="form-design-submit">
                 </section>
             </div>
         </section>
