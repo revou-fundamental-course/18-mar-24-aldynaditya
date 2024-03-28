@@ -17,3 +17,17 @@ function showSlides() {
 }
 
 showSlides();
+
+function submitForm() {
+    let form = document.forms["contact-form"];
+    let userName = form["user-name"].value;
+    let emailAddress = form["email-address"].value;
+    let dropDown = form["drop-down"].value;
+    if (userName == "") alert("Check Again");
+    console.log(form);
+    console.log(userName);
+    console.log(emailAddress);
+    console.log(dropDown);
+}
+
+document.getElementById("send-button").addEventListener('click', () => submitForm());

@@ -44,9 +44,9 @@
     <header class="header-container">
         <div class="logo-icon"></div>
         <div class="nav-container">
-            <a href="#" class="nav-button nav-button-left">Home</a>
-            <a href="#" class="nav-button nav-button-middle">Our Package</a>
-            <a href="#" class="nav-button nav-button-right">Call Us</a>
+            <button class="nav-button nav-button-left">Home</button>
+            <button class="nav-button nav-button-middle">Our Package</button>
+            <button class="nav-button nav-button-right">Call Us</button>
         </div>
     </header>
     <hr />
@@ -104,20 +104,20 @@
                     <h2>Contact Us</h2>
                     <h4><span class="notbold">Sales akan menghubungi anda 1x24 jam setelah data kami terima</span></h4>
                 </header>
-                <section class="forminput">
+                <form name="contact-form" class="forminput">
                     <label for="">Your Name :</label><br>
-                    <input type="text" id="name" name="name" class="form-design" placeholder="First and Last Name"><br><br>
+                    <input type="text" name="user-name" class="form-design" placeholder="First and Last Name" required><br><br>
                     <label for="">Email Address :</label><br>
-                    <input type="text" id="email" name="email" class="form-design" placeholder="example@gmail.com"><br><br>
+                    <input type="text" id="email" name="email-address" class="form-design" placeholder="example@gmail.com" required><br><br>
                     <label for="">What are you interested?</label><br>
-                    <select class="form-design" name="" id="">
+                    <select class="form-design" name="drop-down" id="dd">
                         <option value="" disabled selected hidden >Select Option</option>
-                        <option value="">Option 1</option>
-                        <option value="">Option 2</option>
-                        <option value="">Option 3</option>
+                        <option value="Option1">Option 1</option>
+                        <option value="Option1">Option 2</option>
+                        <option value="Option1">Option 3</option>
                     </select><br>
-                    <input type="submit" value="SEND" class="form-design-submit">
-                </section>
+                    <button type="button" id="send-button" class="form-design-submit">SEND</button>
+                </form>
             </div>
         </section>
 
